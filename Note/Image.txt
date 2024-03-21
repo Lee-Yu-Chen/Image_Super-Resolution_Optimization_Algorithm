@@ -1,0 +1,18 @@
+Image image;
+Image white(Geometry(800, 400), Color("#ffffff"));
+
+
+image.read("C:/Users/ACER/Downloads/Picture/Batu Ferringhi.jpg");
+image.write("C:/Users/ACER/Desktop/asd.png");
+
+image.resize("200x800");	// resizing without changing the aspect ratio, to the smaller dimension (width 200 in this case)
+image.scale(Geometry(300,200)); 	// another function for resizing
+image.crop(Geometry(1000, 800, 300, 500));
+
+
+image.roll(1000, 800);
+
+
+
+
+

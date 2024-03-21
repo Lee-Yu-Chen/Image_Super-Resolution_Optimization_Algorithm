@@ -1,0 +1,29 @@
+https://www.youtube.com/watch?v=ZYLKI8FxiD8&ab_channel=FrostTree
+
+
+right click {Project Name} > Properties > C/C++ > General > Additional Include Directories
+> Edit > New Line (button with icon) > ... (button) > select the top level FOLDER containing the header files (usually named "include")
+
+
+
+
+Static linking (the library is built into the program during compile time, therefore the output file would be larger in size, but also (expected to) run faster)
+
+right click {Project Name>} > Properties > Linker > General > Additional Library Directories
+> Edit > New line (button with icon) > ... (button) > select the top level FOLDER containing the .lib files (usually named "lib")
+
+
+Linker > Input > Additional Dependencies > add the filename of the .lib file(s) and ;
+
+
+
+
+
+
+
+Dynamic linking (the library is linked to by the program, and the program would only refer to the library during runtime, 
+therefore the output file would be smaller in size, ans also (expected to) run slower)
+
+
+same step as static linking, just change the Additional Dependencies name to the file with ___dll.lib
+and .dll files need to be placed in the same directory with the output files (i.e. .exe file)

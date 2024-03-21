@@ -1,0 +1,6 @@
+Compile with #include <Magick++.h>
+
+ 
+
+cd....(to the directory of the .cpp file)
+g++ test.cpp -I "C:\Users\ACER\Desktop\C\C++\Y4 FYP\ImageMagick-7.1.1-Q16\include"
